@@ -1,7 +1,7 @@
 version: 0.2
 env:
     secrets-manager:
-      TOKEN: keyend2end:keyend2end
+      TOKEN: end2end:end2end
 phases:
   install:
     runtime-versions:
@@ -10,7 +10,7 @@ phases:
     commands:
 
 #Static Application Security Scan (SAST scan) using SonarCloud
-     - mvn verify sonar:sonar -Dsonar.projectKey=devseceps-end-2-end_devseceps-end-2-end -Dsonar.organization=devseceps_end_2_end -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$TOKEN 
+     - mvn verify sonar:sonar -Dsonar.projectKey=end2end -Dsonar.organization=end2end -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$TOKEN 
 
 #Quality Gates for Static Application Security Scan(SAST) using SonarCloud
 
