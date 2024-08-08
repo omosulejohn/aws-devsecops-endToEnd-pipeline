@@ -20,7 +20,7 @@ phases:
         echo "SonarCloud analysistatus is $quality_status"; 
 #        if [ $quality_status = "ERROR" ] ; then exit 1;fi
 
-#Software Composition Analysis Scan (SCA scan) using Snyk
+#Software Composition Analysis Scan (SCA scans) using Snyk
 
      - |-
           apt-get update
